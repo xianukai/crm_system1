@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>在庫管理</title>
+<link rel="stylesheet" href="css/style2.css">
+
+<script type="text/javascript">
+function nextfeild(str) {
+        if (str.value.length >= str.maxLength) {
+            for (var i = 0, elm = str.form.elements; i < elm.length; i++) {
+                if (elm[i] == str) {
+                    (elm[i + 1] || elm[0]).focus();
+                    break;
+                }
+            }
+        }
+        return (str);
+    }
+</script>
+
+</head>
+<body>
+
+<div id="header">
+  <ul>
+	  <li id="new">
+		  <a href="admin.php?mode=item">
+			<div>
+			
+				新規登録(スタッフ)
+			  <span>New member</span>
+			</div>
+			</a>
+		</li>
+		<li id="logout">
+		  <a href="admin.php?mode=logout">
+			<div>
+				ログアウト
+			  <span>Logout</span>
+			</div>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<form id="customers-manage-edit-form" method="post" action="admin.php">
+<h1>編集</h1>
+<table border="1">
+  <tr>
+	  <th class="number">登録ID
+	    <span>(必須)</span>
+	  </th>
+	  <th class="name">名前
+	    <span>(必須)</span>
+	  </th>
+	  <th class="reading">ふりがな</th>
+	  <th class="gender">性別</th>
+	  <th class="postal">郵便番号</th>
+	  <th class="address">住所</th>
+	  <th class="phone">電話番号</th>
+	</tr>
+	<tr>
+	  <td class="required">
+	    <input id="number" type="text" name="number" value="!user_id!">
+	  </td>
+	  <td class="required">
+	    <input id="name" type="text" name="name" value="!name!">
+	  </td>
+	  <td>
+	    <input type="text" name="kana" value="!kana!">
+	  </td>
+	  <td>
+	    <label><input id="gender" type="radio" name="gender" value="!gender!" checked>男性</label>
+	    <label><input id="gender" type="radio" name="gender" value="!gender!">女性</label>
+	  </td>
+	  <td>
+	    <input id="edit-postal" type="text" name="postal" value="!postal!" class="edit-postal" maxlength="3" onkeyup="nextfeild(this)">&nbsp;&nbsp;-&nbsp;
+	    <input id="edit-postal" type="text" name="postal2" value="!postal2!" class="edit-postal" maxlength="4" onkeyup="nextfeild(this)">
+	  </td>
+	  <td>
+	    <input id="address" type="text" name="address" value="!address!">
+	  </td>
+	  <td>
+	    <input id="phone" type="tel" name="tel" value="!tel!">
+	  </td>
+	</tr>
+
+</table>
+
+<p class="submit">
+  <input id="edit-button" type="submit" name="sub" value="内容を更新する">
+</p>
+
+<input type="hidden" name="mode" value="item">
+<input type="hidden" name="state" value="update">
+<input type="hidden" name="user_id" value="!user_id!">
+
+</form>
+
+<table id="customers-list" border=1>
+<tbody>
+<tr>
+<!--
+<th>スタッフID</th><th>スタッフ名</th><th>性別</th><th>郵便番号</th><th>住所</th>
+<th>電話番号</th><th>設定１</th><th>設定２</th><th>設定３</th><th>管理</th>
+-->
+
+<th class="number">
+			  スタッフID
+				<form id="order-form" action="admin.php" method="post">
+				  <input type="hidden" name="mode" value="item">
+          <input type="hidden" name="state" value="insert">
+				  <span id="desc"></span>
+					<input type="hidden" name="order" value="DESC">
+				</form>
+			</th>
+			<th class="name">名前</th>
+			<th class="gender">性別</th>
+			<th class="address">住所</th>
+			<th class="phone">電話番号</th>
+			<th class="original-1">備考欄1</th>
+			<th class="original-2">備考欄2</th>
+			<th class="original-3">備考欄3</th>
+			<th class="manage">管理</th>
+
+<tr>
+!item_data!
+</tbody>
+</table>
+
+<div id="page-top" style="display: block;">
+  <span id="arrow-up"></span>  	
+</div>
+<p id="footer">
+  <span>&copy;</span>
+	2019
+	<a href="" target="_blank" rel="nofollow">CRM</a>
+	All Rights Reserved.
+	<br>
+	
+	<a href="" target="_blank" rel="nofollow">こちらから</a>
+</p>
+<div class="access-cgi"></div>
+
+</body>
+</html>

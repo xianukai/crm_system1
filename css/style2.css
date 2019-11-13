@@ -1,0 +1,306 @@
+﻿@charset="utf-8";
+
+body {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Verdana, Arial, sans-serif;
+    color: #454545;
+    font-size: 90%;
+    line-height: 1.8;
+    background: url(image/bg-body.png) repeat 0 0;
+    text-shadow: 0px 1px 0px #ffffff;
+    overflow-y: scroll;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+table, tr, th, td {
+    border: 1px solid #cccccc;
+    border-collapse: collapse;
+}
+div#header {
+  width: 100%;
+  min-width: 1000px;
+  background: #ffffff;
+  border-bottom: 1px solide #cccccc;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+div#header ul {
+  width: 98%;
+  margin: 0 auto;
+  padding: 15px 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+div#header ul li {
+  float: left;
+  border-right: 1px solid #cccccc;
+  padding: 0 20px;
+  text-align: center;
+}
+div#header ul li#new div {
+    padding-left: 70px;
+}
+div#header ul li div {
+    padding: 10px 20px 10px 65px;
+        padding-left: 65px;
+    border-radius: 3px;
+    position: relative;
+}
+div#header ul li span {
+  display: block;
+  font-size: 85%;
+  color: #3377ff;
+}
+div#header ul li#logout {
+  float: right;
+  border-right: none;
+  border-left: 1px solid #cccccc;
+}
+div#header ul li div {
+  padding 10px 20px 10px 65px;
+  border-radius: 3px;
+  position: relative;
+}
+table {
+  width: 95%;
+  margin: 20px auto;
+}
+table#customers_list {
+  width: 95%;
+  min-width: 1000px;
+  margin: 40px auto;
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+table th.number {
+    width: 10%;
+}
+table th {
+    background: #f5f5f5;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+
+
+
+
+form#customers-manage-form th span, 
+form#customers-manage-edit-form th span {
+    margin-left: 1em;
+    color: #ff3535;
+    font-size: 85%;
+}
+
+
+
+
+code, em, strong, th {
+    font-style: normal;
+    font-weight: normal;
+}
+th.number form#order-form {
+    display: inline;
+}
+
+th.number form#order-form span {
+    margin-left: 1em;
+}
+
+table#customers-list th.name, table#customers-list th.reading {
+    width: 12.5%;
+}
+
+
+
+table#customers-list th.gender {
+    width: 6%;
+}
+table#customers-list th.phone {
+    width: 10%;
+}
+table#customers-list th.original-1 {
+    width: 10%;
+}
+table#customers-list th.original-2 {
+    width: 10%;
+}
+table#customers-list th.original-3 {
+    width: 12.5%;
+}
+table th.manage {
+    width: 12.5%;
+}
+table td {
+    padding: 5px 15px;
+}
+td.name span {
+    display: block;
+    color: #999999;
+}
+td.address span {
+    display: block;
+}
+table#customers-list td span.edit {
+    margin-right: 15px;
+}
+
+table#customers-list td span.edit, table#customers-list td span.delete {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 9px 12px;
+    vertical-align: middle;
+    line-height: 1;
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 90%;
+    margin: 5px 0;
+}
+table#customers-list td span.delete {
+    color: #ff3535;
+}
+p#footer {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: 85%;
+    font-family: 'Cinzel', serif;
+}
+
+
+tbody tr td a {
+  display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 9px 12px;
+    vertical-align: middle;
+    line-height: 1;
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 90%;
+    margin: 5px 0;
+}
+
+/* 新規登録 */
+
+form#customers-manage-form, form#customers-manage-edit-form {
+    width: 95%;
+    min-width: 1000px;
+    margin: 40px auto;
+    padding: 20px 0;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba( 0, 0, 0, 0.2 );
+}
+
+form#customers-manage-form h1, form#customers-manage-edit-form h1 {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 120%;
+    overflow: hidden;
+}
+
+form#customers-manage-form p.submit, form#customers-manage-edit-form p.submit {
+    width: 95%;
+    margin: 0 auto;
+}
+
+form#customers-manage-form p.submit input, 
+form#customers-manage-edit-form p.submit input {
+    width: auto;
+    height: auto;
+    padding: 9px 15px;
+    vertical-align: middle;
+    line-height: 1;
+    background: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    color: inherit;
+    font-family: inherit;
+    -webkit-appearance: none;
+}
+
+form#customers-manage-form input, form#customers-manage-edit-form input {
+    height: 2em;
+    padding: 2px 2%;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background: #fafafa;
+}
+
+/*編集*/
+form#customers-manage-form h1, form#customers-manage-edit-form h1 {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 120%;
+    overflow: hidden;
+}
+
+
+table th.number {
+    width: 10%;
+}
+table th.name, table th.reading {
+    width: 15%;
+}
+table th.name, table th.reading {
+    width: 12.5%;
+}
+table th.gender {
+    width: 6%;
+}
+table th.postal {
+    width: 12.5%;
+}
+
+table th.phone {
+    width: 12.5%;
+}
+
+
+form#customers-manage-form label, form#customers-manage-edit-form label {
+    display: block;
+    margin-top: 7px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+}
+
+orm#customers-manage-form label input, form#customers-manage-edit-form label input {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+form#customers-manage-form input, form#customers-manage-edit-form input {
+    width: 95%;
+    height: 2em;
+    padding: 2px 2%;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background: #fafafa;
+}
+
+form#customers-manage-form input.postal,
+form#customers-manage-edit-form input.edit-postal {
+  width: 35%;
+}
+
+table#customers-list {
+    width: 95%;
+    min-width: 1000px;
+    margin: 40px auto;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba( 0, 0, 0, 0.2 );
+}
+
+
+/*編集ボタン*/
+table#customers-list td a {
+    margin-right: 15px;
+}

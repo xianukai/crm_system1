@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ログイン</title>
+<link rel="stylesheet" href="css/style.css" media="screen and (min-width:641px)">
+<link rel="stylesheet" href="css/sp.css" media="screen and (max-width:640px)">
+</head>
+<body>
+
+<!--
+<form id="login-form" action="admin.php" method="post">
+  <h1>CRM ログイン</h1>
+  <input type="text" name="input_id" placeholder="ID or EmailAddress"><br>
+  <input type="password" name="input_pw" placeholder="password"><br>
+  <input type="submit" name="submit" value="ログイン">
+  <input type="hidden" name="mode" value="login">
+</form>　-->
+
+<form id="login-form" action="admin.php" method="post">
+  <h1>CRM ログイン</h1>
+  <dl>
+    <dt>ユーザー名</dt>
+    <dd>
+      <input id="user" type="text" name="input_id" value="">
+    </dd>
+    <dt>パスワード</dt>
+    <dd>
+      <input id="pass" type="password" name="input_pw" value="">
+    </dd>
+  </dl>
+  <p class="submit">
+    <input id="login-button" type="submit"  value="ログイン" name="submit">
+  </p>
+  <input type="hidden" name="mode" value="login">
+</form>
+
+<div id="page-top">
+  <span id="arrow-up"></span>
+</div>
+
+<p id="footer" style="postion: absolute; bottom: 0px; left: 2.5%;">
+  <span>&copy;</span>2019
+  <a href="" target="_blank" rel="nofollow">CRM</a>
+  All Rights Reserved.
+  <br>
+  
+  <a href="http://qlpt.sakura.ne.jp/profile2/home.html" target="_blank" rel="nofollow">作成者のプロフィール</a>
+</p>
+<div class="access-cgi">
+  <img src="">
+</div>
+
+</body>
+</html>

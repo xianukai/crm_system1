@@ -1,0 +1,40 @@
+﻿body {
+  
+}
+
+form {
+  margin: 300px auto;
+  background: #2a3644;
+  width: 350px;
+  text-align: center;
+  padding: 40px;
+}
+
+form h1 {
+  color: #f4f4f4;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.7);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+input {
+  background: rgba(0,0,0,0.2);
+  display: block;
+  width: 270px;
+  padding: 15px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+input[type=submit]{
+  position: relative;
+  diplay: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: #f26964;
+}
+
+
+tbody tr td a {
+  
+}
