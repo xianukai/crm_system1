@@ -13,8 +13,8 @@ $md5_pw = "81dc9bdb52d04dc20036dbd8313ed055";
 
 
 # データベースに接続
-$testuser = "qlpt";
-$testpass = "mukai2019";
+$testuser = "〇〇〇〇";
+$testpass = "m〇〇〇〇〇〇";
 $host = "mysql738.db.sakura.ne.jp";
 $datebase = "qlpt_crm";
 
